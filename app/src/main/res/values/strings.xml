@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">nFDemoSample</string>
+    <string name="permission_content">Allow Permission</string>
+    <string name="alert_request_Permission">Turn on permission from settings</string>
+    <string name="settings">Settings</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="password_error">wrong password</string>
+    <string name="email_error">Email is not correct</string>
+    <string name="api_not_found">Api not found connection failed to get data</string>
+    <string name="server_error">Server not responding</string>
+    <string name="connection_time_out">Connection time out</string>
+    <string name="http_error">Hypertext Transfer Protocol (HTTP)</string>
+    <string name="internet_not_responding">Connection failed internet is not responding</string>
+    <string name="alert_information">Alert!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home</string>
+    <string name="settings_fragment">Settings</string>
+    <string name="profile_fragment"></string>
+    <string name="notification_fragment">Notifications</string>
+    <string name="message_fragment">Message</string>
+    <string name="write_a_message">Write a Message</string>
+    <string name="tv_logout">Logout</string>
+    <string name="tv_about">About Us</string>
+    <string name="location_visibility">Location Visibility</string>
+    <string name="notification_alert">Notification Alert</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="album_privacy">Album Privacy</string>
+</resources>

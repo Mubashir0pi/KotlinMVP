@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghost_white"
+
+    tools:context=".ui.home.HomeFragment">
+
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolBar"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ghost_white"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llLogOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/tvLogout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            style="@style/fontStyleMedium"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_logout"
+                            android:text="@string/tv_logout"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dim_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/llVisibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/tvVisibility"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            style="@style/fontStyleMedium"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_location_alert"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/location_visibility"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/locationSwitch"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="8"
+                            android:theme="@style/ColorSwitchStyle" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dim_gray" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/tvNotification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            style="@style/fontStyleMedium"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_notification_alert"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/notification_alert"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/notificationSwitch"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="8"
+                            android:theme="@style/ColorSwitchStyle" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dim_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/llAlbum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/tvAlbum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            style="@style/fontStyleMedium"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_privacy_album"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/album_privacy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/albumSwitch"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="8"
+                            android:theme="@style/ColorSwitchStyle" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dim_gray" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/tvAbout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            style="@style/fontStyleMedium"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_about"
+                            android:text="@string/tv_about"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dim_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/llContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/tvContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            style="@style/fontStyleMedium"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_contact"
+                            android:text="@string/contact_us"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dim_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</RelativeLayout>

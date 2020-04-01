@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghost_white"
+
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/message_fragment" />
+    <RelativeLayout
+        android:id="@+id/rlMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btGallery"
+            android:background="@color/white"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_15sdp"
+            android:visibility="visible"
+            style="@style/fontStyleRegular"
+            android:textColor="@color/black"
+            android:hint="@string/write_a_message"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/_10sdp" />
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btGallery"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/btSend"
+            android:background="@drawable/ic_gallery" />
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/ic_send_view"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
