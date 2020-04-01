@@ -9,7 +9,7 @@ class GeneralResponseData {
 
     @SerializedName("status")
     @Expose
-    var status: Boolean? = null
+    var status: Boolean? = false
     @SerializedName("message")
     @Expose
     var message: String? = null
